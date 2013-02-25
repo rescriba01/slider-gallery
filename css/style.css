@@ -1,0 +1,252 @@
+/*
+-------------------------------------------------------------------------------------
+	style reset
+------------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+a:link,a:visited,a:hover,a:active {
+	text-decoration:none;
+	color: #666;
+}
+a:hover{
+	color: #ccc;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+-------------------------------------------------------------------------------------
+	end style reset
+------------------------------------------------------------------------------------*/
+@font-face
+{
+	font-family: LANENAR;
+	src: local('../LANENAR.ttf');
+	src: url('../LANENAR.ttf'); 
+} 
+body{
+	font-size: 14px;
+	font-size: 1em;
+	font-family: LANENAR;
+	text-align: center;
+}
+#wrapper{
+	width: 960px;
+	min-height: 600px;
+	margin: 35px auto;
+	border: solid thin #eee;
+}
+#main-header{
+	font-size: 6.7em;
+}
+#main-menu{
+	padding: 5px 15px;
+	margin-bottom: 10px;
+}
+#main-menu li{
+	display: inline-block;
+	font-size: 2.5em;
+	text-align: center;
+}
+.separator{
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+#slider-wrapper{
+	
+	
+	position:relative;
+	margin: 0 auto;
+	
+}
+/*
+-------------------------------------------------------------------------------------
+	Slide Show
+------------------------------------------------------------------------------------*/
+#slider-wrapper{
+	position:relative;
+	margin: 0 auto;
+	
+}
+.showNone{
+	display: none;
+}
+#slides{
+	border: solid 10px black;
+	margin: 0 auto;
+	width: 880px;
+}
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+.slides_container{
+	overflow:hidden;
+	position:relative;
+	
+}
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+.slides_container a{
+	display:block;
+}
+.slides_container a img{
+	display:block;
+}
+/*
+	Next/prev buttons
+*/
+.next,.prev{
+	position:absolute;
+	top:145px;
+	width:45px;
+	height:45px;
+	display:block;
+	z-index:101;
+	font-size:13em;
+}
+.next{
+	left:868px;
+}
+.prev{
+	left:35px;
+}
+#left-arrow,#right-arrow{
+	text-decoration: none;
+	color: #666;
+}
+
+.pagination {
+	display:none;
+}
+.clr{
+	clear:both;
+}
+.featured-wrapper{
+	margin: 0 auto;
+	padding: 25px;
+	
+}
+.featured-post{
+	float: left;
+	border: solid thin #eee;
+	width: 288px;
+	
+}
+
+
+#featured-1{
+	margin-right: 20px;
+	
+}
+#featured-2{
+	margin-right: 20px;
+}
+#featured-3{
+	
+}
+
+#featured-4{
+	margin-right: 20px;
+}
+#featured-5{
+	margin-right: 20px;
+}
+
+.article-header-group h1{
+	font-size: 1.9em;
+	line-height: 1.3em;
+}
+.article-header-group h2{
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+.date-meta,.article-footer{
+	font-size: 0.7em;
+	line-height: 1em;
+}
+.footer-wrapper{
+	padding: 25px;
+
+}
+.footer-sub-wrapper-1{
+	height: 150px;
+	width: 596px;
+	float: right;
+	background-color: #eee;
+
+}
+
+.footer-sub-wrapper-2{
+	height: 150px;
+	width: 288px;
+	background-color: #eee;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
